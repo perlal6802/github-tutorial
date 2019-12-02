@@ -31,12 +31,9 @@ We need an SSH key because it allows us to make our code public allowing others 
 * `git status` ~ Allows you to check what you've done like what you've added, commited, or pushed
 * `git add .`  ~ Adds all changes in the file to the stage so that you're able to commit
 * `git add "file name"` ~ Adds a specific file to the stage and commits changes.
+* `git commit -m "message"`~Saves the changes in the stage area
 * `git push`   ~ Pushes any changes made to certain branch allowing them to save in that certain branch in
 your repository in github
-* `git commit -m "message"`~Saves the changes in the stage area
-* 
-
-
 
 ---
 ## Rolling Back Changes
