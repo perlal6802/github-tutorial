@@ -5,7 +5,7 @@ _by Perla Lopez_
 ---
 ## Git vs. GitHub
 **Git** is all about version control so it qllows you to manage the history of all your files and folders. In other words, it allows all the changes we make be saved and we're allowed to see the history of the changes.
-**Github** is a website where it allows you to update your git repository where other users can view your work 
+**Github** is a website where it allows you to update your git repository where other users can view your work
 and collaborate something to your work by forking and cloning it.
 
 ---
@@ -13,7 +13,7 @@ and collaborate something to your work by forking and cloning it.
 Steps to creating a github account:
 
 1. Go to github.com
-2. Click sign up by filling out your personal information
+2. Click sign up and fill out your personal information
 
 After you've filled in your personal information and signed up to github we can now move on to setting up your ide.
 
@@ -21,9 +21,8 @@ After you've filled in your personal information and signed up to github we can 
 2. Then go to the following link [github](https://github.com/hstatsep/ide50) and follow further
 directions given
 
-We need an SSH key because it allows us to make our code public allowing others to see our code and it allows you to clone and pull other code that is public to us.
-
-
+When setting up our ide we are basically working on setting up an SSH key. We need an SSH key to conect with github, when using Github we need to let the computer know your username and password every single time.
+With an SSH key it helps the github repository know that it's you accesing your code not needing to put your username and password each time you go on github.
 ---
 ## Repository Setup
 
@@ -38,9 +37,9 @@ your repository in github
 
 ---
 ## Rolling Back Changes
-When rolling back on changes there are quite a few commands that we can use but they're all used for something specific.
-For example,
-
+* When wanting to undo something you committed you can simply do **git revert HEAD** as shown below is used for undoing changes to things you have already committed.
+    `git revert HEAD`
+    Ex:
     `git reset --soft HEAD-1`
 
 We can use this if we accidently commit something we didn't want to, this command lets us undo the commit by removing it.
