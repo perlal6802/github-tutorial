@@ -5,7 +5,7 @@ _by Perla Lopez_
 ---
 ## Git vs. GitHub
 **Git** is all about version control so it qllows you to manage the history of all your files and folders. In other words, it allows all the changes we make be saved and we're allowed to see the history of the changes.
-On the other hand **Github** is a website where it allows you to update your git repository where other users can view your work 
+**Github** is a website where it allows you to update your git repository where other users can view your work 
 and collaborate something to your work by forking and cloning it.
 
 ---
