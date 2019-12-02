@@ -23,6 +23,7 @@ directions given
 
 When setting up our ide we are basically working on setting up an SSH key. We need an SSH key to conect with github, when using Github we need to let the computer know your username and password every single time.
 With an SSH key it helps the github repository know that it's you accesing your code not needing to put your username and password each time you go on github.
+
 ---
 ## Repository Setup
 
