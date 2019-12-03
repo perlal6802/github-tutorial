@@ -4,15 +4,14 @@ _by Perla Lopez_
 
 ---
 ## Git vs. GitHub
-**Git** is all about version control so it qllows you to manage the history of all your files and folders. In other words, it allows all the changes we make be saved and we're allowed to see the history of the changes.
-**Github** is a website where it allows you to update your git repository where other users can view your work
-and collaborate something to your work by forking and cloning it.
+**Git** is all about version control so it allows you to manage the history of all your files and folders. In other words, it allows all the changes we've made to be saved and we're allowed to see the history of the changes.
+**Github** is a website where it allows you to update your git repository where other users can view your work and collaborate with you by forking and cloning it.
 
 ---
 ## Initial Setup
 Steps to creating a github account:
 
-1. Go to github.com
+1. Go to [github.com](https://github.com/)
 2. Click sign up and fill out your personal information
 
 After you've filled in your personal information and signed up to github we can now move on to setting up your ide.
@@ -21,8 +20,8 @@ After you've filled in your personal information and signed up to github we can 
 2. Then go to the following link [github](https://github.com/hstatsep/ide50) and follow further
 directions given
 
-When setting up our ide we are basically working on setting up an SSH key. We need an SSH key to conect with github, when using Github we need to let the computer know your username and password every single time.
-With an SSH key it helps the github repository know that it's you accesing your code not needing to put your username and password each time you go on github.
+When setting up our ide we are basically working on setting up an SSH key. We need an SSH key to connect with github. When using Github, we need to let the computer know your username and password every single time.
+With an SSH key, github repository know that it's you accessing your code and to not to ask for your username and password each time you go on github.
 
 ---
 ## Repository Setup
@@ -39,11 +38,11 @@ Initializing a new repository:
 
     `git push -u origin master`
 
-Doing the top command will make will push any changes from the local branch to the remote branch.
+Doing the top command will make you push any changes from the local branch to the remote branch.
 
 Your new repository will then show on your ide and when to go to the repository you must **cd** into it making sure you're not in the root directory.
-After doing so you should do **git init** to initialize it and whenever you make any changes in it make sure to **git add** and **git commit -m "message"** to make
-that any changes can be saved on stage.
+After doing so you should do **git init** to initialize it and whenever you make any changes in it make sure to **git add** and **git commit -m "message"** to make sure
+that any changes will be saved on stage.
 
 
 
