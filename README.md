@@ -38,6 +38,7 @@ Initializing a new repository:
    `git remote add origin git@github.com:username/nameofrepo.git`
 
     `git push -u origin master`
+
 Doing the top command will make will push any changes from the local branch to the remote branch.
 
 Your new repository will then show on your ide and when to go to the repository you must **cd** into it making sure you're not in the root directory.
