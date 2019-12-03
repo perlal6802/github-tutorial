@@ -26,6 +26,25 @@ With an SSH key it helps the github repository know that it's you accesing your 
 
 ---
 ## Repository Setup
+Initializing a new repository:
+1. Go to [github.com](github.com)
+2. Then sign in with your github account
+3. Then click on the far right corner there's a button that is "+" it wil give you an option of making a new repository and sso you click on that
+4. It will then take you to a new page where it says "repository name", you will then go ahead and give your new repository a name
+5. After that is done at the bottom of the page it says "create create repository" and you click on that
+6. Then you copy whatever is the second section that says "…or push an existing repository from the command line"
+7. Next you make sure you're in the root directory and you do
+
+   `git remote add origin git@github.com:username/nameofrepo.git`
+
+    `git push -u origin master`
+Doing the top command will make will push any changes from the local branch to the remote branch.
+
+Your new repository will then show on your ide and when to go to the repository you must **cd** into it making sure you're not in the root directory.
+After doing so you should do **git init** to initialize it and whenever you make any changes in it make sure to **git add** and **git commit -m "message"** to make
+that any changes can be saved on stage.
+
+
 
 ---
 ## Workflow & Commands
@@ -40,22 +59,31 @@ your repository in github
 ## Rolling Back Changes
 * When wanting to undo something you committed you can simply do as shown below, it is used for undoing changes that you have already committed in the repository.
 
-  `git revert HEAD`
-  
-    * When using this command you do **git log** to see your latest commit and then after there will be a set of numbers and letters. You will then copy those set of numbers 
-    and letters and go to your repository and do **git revert HEAD** in which **HEAD** stands for the set of numbers and letters. This will then undo any changes you have 
+          `git revert HEAD`
+
+  * When using this command you do **git log** to see your latest commit and then after there will be a set of numbers and letters. You will then copy those set of numbers
+    and letters and go to your repository and do **git revert HEAD** in which **HEAD** stands for the set of numbers and letters. This will then undo any changes you have
     commited.
-    
+
 * Using the command below gives us the ability to discard any changes we've made by removing them so in any case that we want to remove anything we've added or changed in our program.
 
-    `Git checkout “file name”`
-When you're done 
+          `git checkout “file name”`
 
-Lastly there's .
+    * When using this command you should do **git status** to see if you have anything committed at the moment to discard so if it is green then you can use the command above undoing the commit you've done.
 
-    `git reset HEAD~1`
+* When wanting to remove your latest commit you can use the command below.
 
-This command undoes anything that was recently commited and added.
+          `git reset HEAD`
+
+    * When you want to use this command it's because you want to undo a commit in a certain file. When you do **git status** it shows if you committed any of your changes or not,
+    when doing so if it shows that there's anything committed then you can use the command above to undo the changes.
+
+
+* The command below undoes anything that was recently commited and added.
+
+    `git reset --soft HEAD~1`
+
+    *You can use this command to undo any changes that have been committed or added after checking your status to see if you have anything committed.
 
 These commands are very useful because in case we add or commit something in the wrong repository we're able to undo and if we
 add any code that we want to change then all we can do is undo letting us fix our mistakes.
