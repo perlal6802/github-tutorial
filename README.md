@@ -38,18 +38,18 @@ your repository in github
 
 ---
 ## Rolling Back Changes
-* When wanting to undo something you committed you can simply do **git revert HEAD** as shown below is used for undoing changes to things you have already committed.
-    `git revert HEAD`
-    Ex:
-    `git reset --soft HEAD-1`
+* When wanting to undo something you committed you can simply do as shown below, it is used for undoing changes that you have already committed in the repository.
 
-We can use this if we accidently commit something we didn't want to, this command lets us undo the commit by removing it.
-
-There's also
+  `git revert HEAD`
+  
+    * When using this command you do **git log** to see your latest commit and then after there will be a set of numbers and letters. You will then copy those set of numbers 
+    and letters and go to your repository and do **git revert HEAD** in which **HEAD** stands for the set of numbers and letters. This will then undo any changes you have 
+    commited.
+    
+* Using the command below gives us the ability to discard any changes we've made by removing them so in any case that we want to remove anything we've added or changed in our program.
 
     `Git checkout “file name”`
-
-This gives us the ability to discard any changes we've made by removing them so in any case that we want to remove anything we've added or changed in our program.
+When you're done 
 
 Lastly there's .
 
